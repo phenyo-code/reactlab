@@ -12,7 +12,7 @@ function CourseCard({ name, modules, courseId }) {
   };
 
   return (
-    <div className="w-full max-w-4xl mx-auto bg-white p-6 mb-6 border-b border-gray-200 pb-8">
+    <div onClick={toggleExpand} className="w-full max-w-4xl mx-auto bg-white p-6 mb-6 border-b  border-gray-200 pb-8 cursor-pointer">
       <div className="flex justify-between">
         <h2
           onClick={toggleExpand}
