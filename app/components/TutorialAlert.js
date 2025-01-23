@@ -30,7 +30,7 @@ function TutorialAlert() {
           This tutorial is still in progress
         </h2>
         <p className="mt-2 text-white">
-          Please check again in <span className="font-semibold">7 days</span>.
+          We're still working on this tutorial. It will be available <span className="font-semibold">Soon</span>.
         </p>
       </div>
     </div>
