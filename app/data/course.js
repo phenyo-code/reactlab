@@ -3,7 +3,7 @@
 export const courses = [
     {
       id: 1,
-      name: "Introduction to React",
+      name: "1. Introduction to React",
       description: "Learn the basics of React.js, including components, state, props, and the virtual DOM.",
       modules: [
         "What Is React.js?",
@@ -15,7 +15,7 @@ export const courses = [
     },
     {
       id: 2,
-      name: "Advanced Component Building",
+      name: "2. Advanced Component Building",
       description: "Dive deeper into React.js, including hooks, context, performance optimizations, and routing.",
       modules: [
         "Component Lifecycle Methods",
@@ -27,7 +27,7 @@ export const courses = [
     },
     {
       id: 3,
-      name: "React State Management",
+      name: "3. React State Management",
       description: "An introduction to building applications with Next.js, server-side rendering, and API routes.",
       modules: [
         "Local State & Global State",
@@ -39,7 +39,7 @@ export const courses = [
     },
     {
       id: 4,
-      name: "Advanced React Patterns",
+      name: "4. Advanced React Patterns",
       description: "Learn how to build full-stack applications with React, Next.js, and Node.js.",
       modules: [
         "Higher-Order Components",
@@ -51,7 +51,7 @@ export const courses = [
     },
     {
       id: 5,
-      name: "Performance Optimization",
+      name: "5. Performance Optimization",
       description: "Learn how to build full-stack applications with React, Next.js, and Node.js.",
       modules: [
         "Performance Best Practices",
@@ -63,7 +63,7 @@ export const courses = [
     },
     {
       id: 6,
-      name: "React Routing",
+      name: "6. React Routing",
       description: "Learn how to build full-stack applications with React, Next.js, and Node.js.",
       modules: [
         "React Router Basics",
@@ -75,7 +75,7 @@ export const courses = [
     },
     {
       id: 7,
-      name: "Integration With Backend",
+      name: "7. Integration With Backend",
       description: "Learn how to build full-stack applications with React, Next.js, and Node.js.",
       modules: [
         "Connecting React to REST APIs",
@@ -87,7 +87,7 @@ export const courses = [
     },
     {
       id: 8,
-      name: "Deployment and Hosting",
+      name: "8. Deployment and Hosting",
       description: "Learn how to build full-stack applications with React, Next.js, and Node.js.",
       modules: [
         "Preparing For Deployment",

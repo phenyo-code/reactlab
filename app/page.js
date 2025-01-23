@@ -46,7 +46,7 @@ export default function Home() {
           <h1 className="text-1xl mb-4 font-bold text-center underline">
             React.js Mastery: The Complete Guide
           </h1>
-          <p className="text-gray-600 mb-6 font-bold text-center">
+          <p className="text-blue-400 mb-6 font-bold text-center">
             A Complete Guide To Building Modern Web Applications
           </p>
 
