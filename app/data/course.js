@@ -54,11 +54,11 @@ export const courses = [
       name: "Performance Optimization",
       description: "Learn how to build full-stack applications with React, Next.js, and Node.js.",
       modules: [
-        "Higher-Order Components",
-        "Render Props",
-        "Portals",
-        "Suspense and Error Boundaries",
-        "Custom Render Methods"
+        "Performance Best Practices",
+        "React.memo and useMemo",
+        "React DevTools",
+        "Virtual DOM",
+        "lazy Loading and Code Splitting" 
       ]
     },
     {
@@ -66,11 +66,11 @@ export const courses = [
       name: "React Routing",
       description: "Learn how to build full-stack applications with React, Next.js, and Node.js.",
       modules: [
-        "Higher-Order Components",
-        "Render Props",
-        "Portals",
-        "Suspense and Error Boundaries",
-        "Custom Render Methods"
+        "React Router Basics",
+        "Nested Routes",
+        "Route Parameters",
+        "Redirects And Navigation",
+        "Protected Routes"
       ]
     },
     {
@@ -78,11 +78,11 @@ export const courses = [
       name: "Integration With Backend",
       description: "Learn how to build full-stack applications with React, Next.js, and Node.js.",
       modules: [
-        "Higher-Order Components",
-        "Render Props",
-        "Portals",
-        "Suspense and Error Boundaries",
-        "Custom Render Methods"
+        "Connecting React to REST APIs",
+        "Handling API Responses",
+        "Building A CRUD App",
+        "Authentication and Authorization",
+        "GraphQL With React"
       ]
     },
     {
@@ -90,11 +90,11 @@ export const courses = [
       name: "Deployment and Hosting",
       description: "Learn how to build full-stack applications with React, Next.js, and Node.js.",
       modules: [
-        "Higher-Order Components",
-        "Render Props",
-        "Portals",
-        "Suspense and Error Boundaries",
-        "Custom Render Methods"
+        "Preparing For Deployment",
+        "Deploying To Netlify",
+        "Deploying To Vercel",
+        "CI/CD Pipelines",
+        "Performance And SEO Optimization" 
       ]
     }
     
