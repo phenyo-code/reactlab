@@ -1,5 +1,5 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+// next.config.mjs
+export default {
     env: {
       NEXTAUTH_SECRET: process.env.NEXTAUTH_SECRET,
       GOOGLE_CLIENT_ID: process.env.GOOGLE_CLIENT_ID,
@@ -9,5 +9,4 @@ const nextConfig = {
     },
   };
   
-  module.exports = nextConfig;
   
