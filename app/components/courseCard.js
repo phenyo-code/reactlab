@@ -11,7 +11,7 @@ function CourseCard({ name, modules }) {
   };
 
   return (
-    <div onClick={toggleExpand} className="w-full max-w-4xl mx-auto cursor-pointer bg-white p-6 mb-6 hover:shadow-xl   transition border-b border-gray-200 pb-8">
+    <div onClick={toggleExpand} className="w-full max-w-4xl mx-auto cursor-pointer bg-white p-6 mb-6  border-b border-gray-200 pb-8">
       <div className="flex justify-between">
         <h2  onClick={toggleExpand} className="text-1xl font-bold text-black z-20 underline">{name}</h2>
         <button onClick={toggleExpand} className="text-gray-500 hover:text-gray-700 transition">
