@@ -4,6 +4,8 @@ import { signOut } from 'next-auth/react';
 import Link from 'next/link';
 import { courses } from './data/course';
 import CourseCard from './components/courseCard';
+import Header from './components/header';
+import Footer from './components/footer';
 
 export default function Home() {
 
@@ -16,7 +18,9 @@ export default function Home() {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+    <div>
+      <Header />
+    <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 pb-8">
 
 
       <div className=" text-center ">
@@ -33,15 +37,9 @@ export default function Home() {
             <CourseCard key={course.id} name={course.name} modules={course.modules} />
           ))}
         </div>
-
-        <Link legacyBehavior href="/auth/signin">
-          <button 
-            className="mt-6 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition"
-          >
-            Sign Out
-          </button>
-        </Link>
       </div>
+    </div>
+    <Footer />
     </div>
   );
 }

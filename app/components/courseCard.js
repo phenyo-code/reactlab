@@ -21,7 +21,7 @@ function CourseCard({ name, modules }) {
 
       {isExpanded && (
         <div className="mt-4">
-          <p className="text-gray-600 font-semibold mb-2">What You Will Learn:</p>
+          <p className="text-gray-600 font-semibold mb-2">Learning Modules:</p>
           <ul className="list-disc list-inside space-y-1 text-gray-700">
             {modules.map((module, index) => (
               <li key={index}>{module}</li>
