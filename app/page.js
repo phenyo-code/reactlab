@@ -2,7 +2,6 @@
 
 import { useEffect, useState } from 'react';
 import { useSession, signOut } from 'next-auth/react';
-import Link from 'next/link';
 import { courses } from './data/course';
 import CourseCard from './components/courseCard';
 import Header from './components/header';
@@ -14,8 +13,9 @@ export default function Home() {
   const [showAlert, setShowAlert] = useState(false);
 
   useEffect(() => {
-    if (session) {
+    if (session && !sessionStorage.getItem("alertShown")) {
       setShowAlert(true);
+      sessionStorage.setItem("alertShown", "true"); // Store that the alert has been shown
     }
   }, [session]);
 
