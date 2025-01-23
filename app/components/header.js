@@ -18,19 +18,21 @@ function Header() {
       {/* Logo */}
       <div className="text-blue-500 font-bold text-3xl">reactlab</div>
 
-      {/* Search Input */}
-      <div className="flex items-center flex-1 mx-4">
-        <div className="relative w-full max-w-md">
-          <input
-            type="text"
-            placeholder="Search..."
-            className="w-full px-4 py-2 rounded-l-md border border-gray-300 focus:outline-none"
-          />
-          <button className="absolute top-0 right-0 h-full px-3 bg-blue-500 text-white rounded-r-md">
-            <FiSearch />
-          </button>
+      {/* Search Input (only visible when authenticated) */}
+      {session && (
+        <div className="flex items-center flex-1 mx-4">
+          <div className="relative w-full max-w-md">
+            <input
+              type="text"
+              placeholder="Search..."
+              className="w-full px-4 py-2 rounded-l-md border border-gray-300 focus:outline-none"
+            />
+            <button className="absolute top-0 right-0 h-full px-3 bg-blue-500 text-white rounded-r-md">
+              <FiSearch />
+            </button>
+          </div>
         </div>
-      </div>
+      )}
 
       {/* Conditional Button and Icons */}
       <div className="flex items-center space-x-4">
@@ -43,7 +45,7 @@ function Header() {
           </Link>
         )}
 
-        {/* menu (visible only if authenticated) */}
+        {/* Menu (visible only if authenticated) */}
         {session && (
           <button
             onClick={toggleMenu}
