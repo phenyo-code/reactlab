@@ -17,18 +17,20 @@ export default function Home() {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-      <div className="max-w-4xl w-full p-8 bg-white shadow-lg rounded-lg text-center">
-        <h1 className="text-3xl font-bold mb-4">Welcome to ReactLab!</h1>
-        <p className="text-gray-600 mb-6">Start learning React, Next.js, and more here.</p>
 
-        {/* Render the course cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-          {courses.map(course => (
-            <CourseCard 
-              key={course.id}
-              title={course.title}
-              modules={course.modules}
-            />
+
+      <div className=" text-center ">
+        <h2 className="text-2xl font-bold text-center mb-8 mt-8">React.js Mastery Learning Platform.</h2>
+        <h3 className="text-1xl font-bold mb-8 mt-8 underline">8 Courses</h3>
+      </div>
+
+      <div className="max-w-4xl w-full p-8 bg-white shadow-lg rounded-lg ">
+        <h1 className="text-1xl mb-4 font-bold text-center underline">React.js Mastery: The Complete Guide</h1>
+        <p className="text-gray-600 mb-6 font-bold text-center">A Complete Guide To Building Modern Web Applications</p>
+
+        <div className="space-y-4">
+          {courses.map((course) => (
+            <CourseCard key={course.id} name={course.name} modules={course.modules} />
           ))}
         </div>
 
