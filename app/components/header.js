@@ -16,7 +16,7 @@ function Header() {
   return (
     <header className="flex items-center justify-between border-b border-gray-200 px-6 py-4 bg-gray-100 shadow-md">
       {/* Logo */}
-      <div className="text-blue-500 font-bold text-3xl">react-lab</div>
+      <div className="text-blue-500 font-bold text-3xl">reactlab</div>
 
       {/* Search Input */}
       <div className="flex items-center flex-1 mx-4">
