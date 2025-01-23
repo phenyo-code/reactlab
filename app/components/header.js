@@ -36,37 +36,38 @@ function Header() {
       <div className="flex items-center space-x-4">
         {/* Join for Free (visible only if not authenticated) */}
         {!session && (
-            <Link legacyBehavior href="/auth/signin">
-          <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
-            Join for Free
-          </button>
-            </Link>
+          <Link legacyBehavior href="/auth/signin">
+            <button className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
+              Join for Free
+            </button>
+          </Link>
         )}
 
-        {/* Handbag Icon */}
-        <button
-          onClick={toggleMenu}
-          className="p-2 rounded-full bg-gray-200 hover:bg-gray-300"
-        >
-          <FiMenu className="text-blue-500 text-xl" />
-        </button>
+        {/* menu (visible only if authenticated) */}
+        {session && (
+          <button
+            onClick={toggleMenu}
+            className="p-2 rounded-full bg-gray-200 hover:bg-gray-300"
+          >
+            <FiMenu className="text-blue-500 text-xl" />
+          </button>
+        )}
       </div>
 
-      {/* Side Menu (visible when toggled) */}
+      {/* Side Menu (visible when toggled and authenticated) */}
       {isMenuOpen && session && (
-        <div className="absolute top-16 right-6 w-48 bg-white   shadow-md rounded-lg p-4">
+        <div className="absolute top-16 right-6 w-48 bg-white shadow-md rounded-lg p-4">
           <ul className="space-y-2">
             <li className="cursor-pointer hover:text-blue-500">Profile</li>
             <li className="cursor-pointer hover:text-blue-500">
               Accomplishments
             </li>
-            <Link legacyBehavior href="/auth/signin">
             <li
+              onClick={() => signOut()}
               className="cursor-pointer text-red-500 hover:text-red-600"
             >
               Log Out
             </li>
-            </Link>
           </ul>
         </div>
       )}
