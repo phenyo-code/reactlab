@@ -43,10 +43,10 @@ export default function Home() {
         </div>
 
         <div className="max-w-4xl w-full p-8 bg-white shadow-lg rounded-lg">
-          <h1 className="text-1xl mb-4 font-bold text-center underline">
+          <h1 className="text-1xl mb-4 font-bold text-center text-blue-500 underline">
             React.js Mastery: The Complete Guide
           </h1>
-          <p className="text-blue-400 mb-6 font-bold text-center">
+          <p className="text-gray-600 mb-6 font-bold text-center">
             A Complete Guide To Building Modern Web Applications
           </p>
 
