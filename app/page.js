@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import { useEffect, useState } from 'react';
 import { useSession, signOut } from 'next-auth/react';
@@ -13,7 +13,6 @@ export default function Home() {
   const { data: session } = useSession();
   const [showAlert, setShowAlert] = useState(false);
 
-  // Show the popup only when a user signs in
   useEffect(() => {
     if (session) {
       setShowAlert(true);
@@ -22,9 +21,9 @@ export default function Home() {
 
   const handleLogout = async () => {
     try {
-      await signOut(); // Sign out the user
+      await signOut();
     } catch (error) {
-      console.error('Error signing out:', error); // Handle any errors
+      console.error('Error signing out:', error);
     }
   };
 
@@ -32,7 +31,6 @@ export default function Home() {
     <div>
       <Header />
       <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 pb-8">
-        {/* Popup Alert */}
         {showAlert && <TutorialAlert onClose={() => setShowAlert(false)} />}
 
         <div className="text-center">
@@ -55,7 +53,8 @@ export default function Home() {
               <CourseCard
                 key={course.id}
                 name={course.name}
-                modules={course.modules}
+                modules={course.modules}  // Passing modules here
+                courseId={course.id}      // Passing courseId for linking modules
               />
             ))}
           </div>
