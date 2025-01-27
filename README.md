@@ -1,4 +1,4 @@
-# ReactLab - Learn React with Next.js
+# ReactLab - Learn React.js
 
 ## Description
 ReactLab is an interactive web application designed to help developers learn React. Built with Next.js, ReactLab offers a hands-on approach to learning React by providing tutorials, challenges, and examples. It is designed to provide a structured learning experience, allowing beginners and intermediate developers to master React concepts efficiently.
