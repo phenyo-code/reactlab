@@ -11,7 +11,7 @@ Learning React can be a daunting task for beginners. ReactLab was built with the
 
 ReactLab solves the problem of scattered resources and inconsistent learning paths, giving developers a cohesive environment where they can learn and practice React from the ground up.
 
-## Quick Start  ()
+## Quick Start  (https://reactlab-one.vercel.app)
 
 ### Prerequisites
 Before starting the project, ensure you have the following tools installed on your machine:
@@ -48,5 +48,5 @@ Before starting the project, ensure you have the following tools installed on yo
 ##### Follow Learning Paths: Progress through curated learning paths that take you from beginner to advanced React concepts.
 
 
-License
+## License
 This project is licensed under the MIT License - see the LICENSE file for details.
